@@ -30,6 +30,7 @@ module.exports = {
         src: "dataset/images",
         dest: "app/dataset/images",
         options: {
+          recursive: true,
           force: true
         }
       }
