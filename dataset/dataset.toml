@@ -1,0 +1,15 @@
+[general]
+shuffle_caption = false
+caption_extension = '.txt'
+keep_tokens = 1
+
+# This is a DreamBooth-style dataset
+[[datasets]]
+resolution = 512
+batch_size = 1
+keep_tokens = 1
+
+  [[datasets.subsets]]
+  image_dir = '/Users/x/pinokio/api/fluxtrain/app/dataset/images'
+  class_tokens = 'itojunji style'
+  num_repeats = 10
