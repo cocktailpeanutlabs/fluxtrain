@@ -53,7 +53,7 @@ module.exports = {
       params: {
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "{{platform === 'win32' ? 'setup.bat' : 'bash setup.sh'}}",
+          "{{platform === 'win32' ? 'setup.bat --headless' : 'bash setup.sh'}}",
         ]
       }
     },
