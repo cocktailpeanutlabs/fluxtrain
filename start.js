@@ -10,7 +10,7 @@ module.exports = {
         },                   // Edit this to customize environment variables (see documentation)
         path: "app/sd-scripts",                // Edit this to customize the path to start the shell from
         message: [
-          "bash train.sh"
+          "{{platform === 'win32' ? 'train.bat' : 'bash train.sh'}}"
         ],
 //        on: [{
 //          // The regular expression pattern to monitor.
